@@ -91,34 +91,52 @@
         </section>
 
         <!-- ---------- Таблица ---------- -->
-        <section id="table" class="content-block">
-            <h2>Таблица</h2>
-            <table class="data-table">
-                <caption>Успеваемость обучаещихся 11 класса</caption>
-                <thead>
-                    <tr>
-                        <th rowspan="2">№</th>
-                        <th rowspan="2">ФИО</th>
-                        <th colspan="3">Оценки</th>
-                        <th rowspan="2">Средний балл</th>
-                    </tr>
-                    <tr>
-                        <th>Математика</th>
-                        <th>Физика</th>
-                        <th>Информатика</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>1</td><td>Иванов И. И.</td><td>5</td><td>4</td><td>5</td><td>4.67</td></tr>
-                    <tr><td>2</td><td>Петров П. П.</td><td>4</td><td>4</td><td>4</td><td>4.00</td></tr>
-                    <tr><td>3</td><td>Сидоров С. С.</td><td>3</td><td>4</td><td>5</td><td>4.00</td></tr>
-                    <tr><td>4</td><td>Кузнецова А. В.</td><td>5</td><td>5</td><td>5</td><td>5.00</td></tr>
-                    <tr><td>5</td><td>Смирнов Д. А.</td><td>4</td><td>3</td><td>4</td><td>3.67</td></tr>
-                    <tr><td>6</td><td>Соколова М. Н.</td><td>5</td><td>4</td><td>5</td><td>4.67</td></tr>
-                </tbody>
-            </table>
-        </section>
-
+<section id="table" class="content-block">
+    <h2>Таблица</h2>
+    <div class="table-wrap">
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>Колонка 1</th>
+                    <th>Колонка 2</th>
+                    <th>Колонка 3</th>
+                    <th>Колонка 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="4" class="merged">Ячейка 1 Столбец 1-4</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 2 Столбец 1</td>
+                    <td>Ячейка 2 Столбец 2</td>
+                    <td>Ячейка 2 Столбец 3</td>
+                    <td>Ячейка 2 Столбец 4</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 3 Столбец 1</td>
+                    <td colspan="2" class="merged">Ячейка 3 Столбец 2-3</td>
+                    <td>Ячейка 3 Столбец 4</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 4 Столбец 1</td>
+                    <td>Ячейка 4 Столбец 2</td>
+                    <td>Ячейка 4 Столбец 3</td>
+                    <td>Ячейка 4 Столбец 4</td>
+                </tr>
+                <tr>
+                    <td>Ячейка 5 Столбец 1</td>
+                    <td>Ячейка 5 Столбец 2</td>
+                    <td>Ячейка 5 Столбец 3</td>
+                    <td>Ячейка 5 Столбец 4</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="merged">Ячейка 6 Столбец 1-4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
         <!-- ---------- Форма ---------- -->
         <section id="form" class="content-block">
             <h2>Форма</h2>
