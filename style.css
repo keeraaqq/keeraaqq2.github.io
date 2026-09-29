@@ -207,97 +207,72 @@ h1 {
     margin-bottom: 6px;
 }
 
-/* ============ ТАБЛИЦА (каждая ячейка своего оттенка) ============ */
+/* ============ ТАБЛИЦА ============ */
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px 0;
+}
+
 .data-table {
     width: 100%;
+    min-width: 560px;
     border-collapse: separate;
     border-spacing: 0;
     margin: 18px 0;
     font-size: 15px;
     border-radius: 12px;
     overflow: hidden;
+    table-layout: fixed;
     box-shadow: 0 8px 26px rgba(90, 32, 184, 0.12);
-}
-
-.data-table caption {
-    text-align: left;
-    font-weight: bold;
-    padding: 8px 0 14px;
-    color: #4a10a0;
-    font-size: 16px;
-    letter-spacing: 0.3px;
 }
 
 .data-table th,
 .data-table td {
+    width: 25%;
     padding: 14px 16px;
     text-align: center;
+    vertical-align: middle;
+    color: #2d1b3d;
 }
 
-/* Заголовки — градиент */
+/* Шапка — под цвет шапки сайта (#5a20b8) */
 .data-table thead th {
-    background: #4a10a0;
+    background: #5a20b8;
     color: #fff;
     font-weight: 700;
     letter-spacing: 0.5px;
     font-size: 15px;
-    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
-
-.data-table thead th:nth-child(1) { background: #4c12a4; }
-.data-table thead th:nth-child(2) { background: #5218b0; }
-.data-table thead th:nth-child(3) { background: #581ebc; }
-.data-table thead th:nth-child(4) { background: #5e24c8; }
-.data-table thead th:nth-child(5) { background: #642ad4; }
-.data-table thead th:nth-child(6) { background: #6a30d0; }
-
 .data-table thead th:last-child { border-right: none; }
 
-.data-table thead tr:first-child th {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-/* Ячейки — каждая своего оттенка */
-
-/* Нечётные строки */
-.data-table tbody tr:nth-child(odd) td:nth-child(1) { background: #faf3fd; }
-.data-table tbody tr:nth-child(odd) td:nth-child(2) { background: #f7eefb; }
-.data-table tbody tr:nth-child(odd) td:nth-child(3) { background: #f4e9f9; }
-.data-table tbody tr:nth-child(odd) td:nth-child(4) { background: #f1e4f7; }
-.data-table tbody tr:nth-child(odd) td:nth-child(5) { background: #eedff5; }
-.data-table tbody tr:nth-child(odd) td:nth-child(6) { background: #ebdaf3; }
-
-/* Чётные строки — чуть темнее */
-.data-table tbody tr:nth-child(even) td:nth-child(1) { background: #f4e6f9; }
-.data-table tbody tr:nth-child(even) td:nth-child(2) { background: #f1e0f7; }
-.data-table tbody tr:nth-child(even) td:nth-child(3) { background: #eedbf5; }
-.data-table tbody tr:nth-child(even) td:nth-child(4) { background: #ebd6f3; }
-.data-table tbody tr:nth-child(even) td:nth-child(5) { background: #e8d1f1; }
-.data-table tbody tr:nth-child(even) td:nth-child(6) { background: #e5ccef; }
-
-/* Общие свойства ячеек */
+/* Обычные ячейки — светло-серые */
 .data-table tbody td {
-    color: #2d1b3d;
-    border-right: 1px solid rgba(142, 46, 232, 0.06);
-    border-bottom: 1px solid rgba(142, 46, 232, 0.06);
+    background: #f2f2f4;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    transition: background 0.2s;
 }
 
-.data-table tbody td:last-child { border-right: none; }
-.data-table tbody tr:last-child td { border-bottom: none; }
-
-/* Номер */
-.data-table tbody td:first-child {
-    font-weight: 600;
-    color: #6e28d0;
+.data-table tbody td:hover {
+    background: #e6e6ea;
 }
 
-/* Средний балл */
-.data-table tbody td:last-child {
+/* Объединённые ячейки — чуть темнее */
+.data-table tbody td.merged {
+    background: #e0e0e6;
     font-weight: 600;
     color: #4a10a0;
 }
+.data-table tbody td.merged:hover {
+    background: #d6d6dd;
+}
 
+/* Убираем лишние границы по краям */
+.data-table tbody tr:last-child td { border-bottom: none; }
+.data-table tbody td:last-child { border-right: none; }
 /* ============ ФОРМА ============ */
 fieldset {
     max-width: 520px;
