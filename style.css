@@ -1,4 +1,3 @@
-/* ============ БАЗА ============ */
 * {
     box-sizing: border-box;
 }
@@ -21,7 +20,6 @@ body {
     padding: 0 20px;
 }
 
-/* ============ ШАПКА (потемнее) ============ */
 #site-header {
     background: #5a20b8;
     color: #fff;
@@ -35,7 +33,6 @@ body {
     gap: 22px;
 }
 
-/* Логотип */
 .logo-link {
     display: inline-block;
     text-decoration: none;
@@ -79,7 +76,6 @@ body {
     gap: 10px;
 }
 
-/* ============ МЕНЮ ============ */
 #site-nav {
     background: transparent;
 }
@@ -131,7 +127,7 @@ body {
     opacity: 0.95;
 }
 
-/* ============ КОНТЕНТ ============ */
+
 main {
     padding: 25px 0;
 }
@@ -207,7 +203,6 @@ h1 {
     margin-bottom: 6px;
 }
 
-/* ============ ТАБЛИЦА ============ */
 .table-wrap {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -236,7 +231,6 @@ h1 {
     color: #2d1b3d;
 }
 
-/* Шапка — под цвет шапки сайта (#5a20b8) */
 .data-table thead th {
     background: #5a20b8;
     color: #fff;
@@ -248,7 +242,6 @@ h1 {
 }
 .data-table thead th:last-child { border-right: none; }
 
-/* Обычные ячейки — светло-серые */
 .data-table tbody td {
     background: #f2f2f4;
     border-right: 1px solid #ffffff;
@@ -260,7 +253,6 @@ h1 {
     background: #e6e6ea;
 }
 
-/* Объединённые ячейки — чуть темнее */
 .data-table tbody td.merged {
     background: #e0e0e6;
     font-weight: 600;
@@ -270,10 +262,9 @@ h1 {
     background: #d6d6dd;
 }
 
-/* Убираем лишние границы по краям */
 .data-table tbody tr:last-child td { border-bottom: none; }
 .data-table tbody td:last-child { border-right: none; }
-/* ============ ФОРМА ============ */
+
 fieldset {
     max-width: 520px;
     padding: 20px 24px;
@@ -360,7 +351,6 @@ button[type="button"]:active {
     box-shadow: 0 2px 8px rgba(90, 32, 184, 0.35);
 }
 
-/* ============ ОШИБКИ ============ */
 .error-text {
     color: #c0392b;
     font-size: 13px;
@@ -389,7 +379,6 @@ button[type="button"]:active {
     font-style: italic;
 }
 
-/* ============ ПОДВАЛ (тот же цвет, что шапка) ============ */
 #site-footer {
     background: #5a20b8;
     color: #fff;
@@ -412,7 +401,6 @@ button[type="button"]:active {
     border-bottom-color: #fff;
 }
 
-/* ============ АДАПТИВ ============ */
 @media (max-width: 600px) {
     .header-inner {
         flex-direction: column;
